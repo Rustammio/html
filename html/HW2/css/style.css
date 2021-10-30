@@ -1,0 +1,134 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f7fa;
+
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1400px;
+    background-color: #f5f7fa;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: black;
+    margin: 0 auto;
+    padding: 100;
+
+
+}
+.header {
+    color: red;
+    margin-bottom: 10px
+;
+
+    font-weight: bold;
+}
+.nav-nav {
+    list-style-type: none;
+    font-weight: bold;
+}
+.nav-header {
+    display: inline;
+    margin-right: 62px;
+    width: 68px;
+    height: 27px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    align-items: center;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+.link{
+    text-decoration: none;
+    color: red;
+}
+.photoview {
+    /*align-items: center;*/
+    /*width: 1000px;*/
+    height: 789px;
+    left: 0px;
+    top: 78px;
+
+ }
+.main-content{
+    text-align: center;
+}
+
+
+.title {
+    margin-top: 70px;
+    margin-left: 250px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 3.3px;
+    text-transform: uppercase;
+    color: #373737;
+    width: 774px;
+    height: 29px;
+    left: 253px;
+    top: 48px;
+
+}
+
+.description {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+
+
+    width: 1145px;
+    height: 132px;
+    left: 67.5px;
+    top: 115px;
+    color: #373737;
+    letter-spacing: 2.4px;
+
+
+
+
+}
+.btn {
+    text-align: center;
+
+}
+.btn-primary {
+    margin-top: 100px;
+    /*margin-left: 540px;*/
+    padding:20px 50px 20px 50px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 1.8px;
+    font-style: normal;
+    cursor:pointer;
+
+
+}
+
+.pull-right {
+    margin-left: 750px;
+    padding-top: 80px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 2.4px;
+    color: #373737;
+}
