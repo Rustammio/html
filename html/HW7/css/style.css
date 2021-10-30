@@ -1,0 +1,33 @@
+body {
+    background: rgb(20,20,20);
+    overflow: hidden;
+    font-family: 'Roboto';
+    margin: 50% 0 0 0;
+    position: relative;
+}
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+
+    perspective: 450px;
+}
+.scroll-text {
+    color: #ffff00;
+    font-size: 3vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 30s linear forwards;
+    animation-iteration-count: infinite;
+}
+h1,h2 {
+    text-align: center;
+}
+
+@keyframes scroll {
+    from { top: 0; transform: translateZ(0) rotateX(20deg); }
+    to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg); }
+}

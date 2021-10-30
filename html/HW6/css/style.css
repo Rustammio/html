@@ -1,0 +1,384 @@
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(../img/Фон1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    min-height: 100%;
+
+
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 157px 1fr 200px;
+    grid-template-rows: 58px;
+    background-color: rgba(0, 0, 0, 0.45);
+    align-items: center;
+    justify-content: center;
+    padding-left: 78px;
+    padding-right: 78px;
+}
+
+.name-logo {
+    order: -1;
+    color: white;
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+
+}
+
+.name-logo:hover {
+    filter: invert(75%) sepia(11%) saturate(2458%) hue-rotate(94deg) brightness(83%) contrast(77%);
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    order: 3;
+    height: 100%;
+    position: relative;
+
+}
+
+.calendar {
+    position: absolute;
+    right: 122px;
+    top: 17px;
+}
+
+.mail {
+    position: absolute;
+    right: 72px;
+    top: 17px;
+}
+
+.net {
+    position: absolute;
+    right: 22px;
+    top: 17px;
+}
+
+.log-in-links:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    height: 19px;
+    border-left: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.log-in-links {
+    order: 4;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+
+
+}
+
+.welcome {
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: white;
+}
+
+.li:hover {
+    filter: invert(75%) sepia(11%) saturate(2458%) hue-rotate(94deg) brightness(83%) contrast(77%);
+}
+
+.hello {
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.container-sign-in {
+    background-color: #ffffff;
+    display: grid;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    grid-template-rows:repeat(10, 50px);
+    grid-row-gap: 5px;
+    width: 322px;
+    justify-content: center;
+    align-content: center;
+    padding: 31px 61px;
+
+
+}
+
+.container-sign-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 324px;
+    margin-top: 20px;
+
+
+}
+
+.sign-logo {
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #434343;
+    position: relative;
+    /* or 100% */
+}
+.sign-logo::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: -60px;
+    background-color: #3CB878;
+    z-index:3;
+
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+}
+
+.facebook-button {
+    background-color: #305DB8;
+    color: white;
+    padding: 17px 22px 17px 67px;
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+    position: relative;
+}
+.facebook-button:hover {
+    background-color: #022263;
+}
+
+.facebook-button:before {
+    content: " ";
+    display: block;
+    width: 13px;
+    height: 24px;
+    background-image: url("../img/Group.svg");
+    position: absolute;
+    left: 17px;
+    bottom: 12px;
+}
+
+.mark:before {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 28px;
+    position: absolute;
+    left: 48px;
+    bottom: 10px;
+    border-left: 1px solid rgba(128, 128, 128, 0.29);
+
+}
+
+.google-button {
+    background-color: #DF4A32;
+    color: white;
+    padding: 17px 26px 17px 80px;
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+    position: relative;
+
+}
+.google-button:hover{
+    background-color: #AB1F09;
+}
+
+.google-button:before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 19px;
+    background-image: url("../img/G+.png");
+    position: absolute;
+    left: 12px;
+    bottom: 14px;
+}
+
+.name-log {
+    font-family: Ubuntu,SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #3CB878;
+}
+
+.or {
+    color: #848484;
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    position: relative;
+
+}
+
+.or:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid rgba(91, 91, 91, 0.34);
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 60%;
+    width: 152px;
+}
+
+.or:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid rgba(91, 91, 91, 0.34);
+    height: 1px;
+    position: absolute;
+    right: 0;
+    bottom: 60%;
+    width: 152px;
+}
+
+.inp {
+    border: 1px solid rgba(242, 242, 242, 0.56);
+    border-radius: 6px;
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 14px;
+    padding-left: 20px;
+}
+
+.inp:focus {
+    outline: none;
+    box-shadow: 0 8px 8px -4px rgba(82, 82, 82, 0.32);
+}
+
+.inp::placeholder {
+    color: #BEBEBE;
+
+}
+
+.button {
+    background-color: #3CB878;
+    border: none;
+    color: white;
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.checkInp {
+
+    font-family: Ubuntu, SansSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.chek {
+
+}
+
+input[type=checkbox] + label {
+    display: block;
+    /*margin: 0.2em;*/
+    cursor: pointer;
+    /*padding: 0.2em;*/
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid rgba(115, 115, 115, 0.5);
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.5em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .3s;
+}
+
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+}

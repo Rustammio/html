@@ -1,0 +1,370 @@
+body {
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+}
+
+svg:hover {
+    fill: #F26522;
+}
+
+use {
+    width: 60px;
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-title,
+.first-title,
+.second-title,
+.third-title,
+.fourth-title,
+.fifth-title,
+.sixth-title,
+.Copyright {
+    color: white;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 200px;
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 60px;
+    transition: all 1s ease;
+cursor: pointer;
+}
+
+.header-title:hover {
+    transition: all 1s ease;
+    filter: invert(48%) sepia(44%) saturate(2891%) hue-rotate(346deg) brightness(96%) contrast(97%);
+}
+
+.header-title:before {
+    content: "";
+    display: block;
+    background-image: url("../img/logo 3.png");
+    width: 60px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+.milan {
+    font-family: Roboto;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 29px;
+}
+
+.holidays {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80px;
+}
+
+.header-mail {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 15px;
+    transition: all 1s ease;
+}
+
+.header-mail:hover {
+    filter: invert(48%) sepia(44%) saturate(2891%) hue-rotate(346deg) brightness(96%) contrast(97%);
+    transition: all 1s ease;
+}
+
+.header-phone {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease;
+}
+
+.header-phone:hover {
+    filter: invert(48%) sepia(44%) saturate(2891%) hue-rotate(346deg) brightness(96%) contrast(97%);
+    transition: all 1s ease;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.photo-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.first-logo {
+
+
+}
+
+.photo-container {
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+    cursor: pointer;
+}
+
+.caption {
+    width: 99%;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    left: 0.65%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F26522;
+    transition: all 1s ease;
+}
+
+/**/
+.first-container:focus .caption, .first-container:hover .caption {
+
+    transform: translateY(-100%);
+    transition: all 1s ease;
+}
+
+.first-container:focus .title, .first-container:hover .title {
+    color: #F26522;
+    transition: all 1s ease;
+}
+
+.caption-container {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.from {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    color: white;
+    padding-top: 5px;
+}
+
+
+.details {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    padding-right: 40px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.details::before {
+    content: ">";
+    display: block;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    right: 30px;
+}
+.details:hover{
+    text-decoration: underline;
+}
+
+.price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+    color: white;
+    transition: all 1s ease;
+
+}
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.second-logo {
+
+}
+
+.second-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.third-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.third-logo {
+
+}
+
+.third-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.fourth-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fourth-logo {
+
+}
+
+.fourth-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.fifth-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fifth-logo {
+
+}
+
+.fifth-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.sixth-container {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sixth-logo {
+
+}
+
+.sixth-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Copyright {
+
+
+}
